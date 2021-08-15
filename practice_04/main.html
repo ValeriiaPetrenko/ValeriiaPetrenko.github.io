@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Заметки путешественника</title>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Fjalla One', sans-serif;
+            text-shadow: 0 2px black;
+            font-size: 45px;
+            margin-bottom: 16px;
+        }
+
+        .header {
+            width: 100%;
+            position: relative;
+        }
+
+        [alt="palms"] {
+            width: 100%;
+        }
+
+        .textHeader {
+            position: absolute;
+            top: 130px;
+            left: 220px;
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f3f0f0;
+        }
+
+        ul {
+            list-style-type: none;
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .navbar li {
+            float: left;
+            padding: 20px 35px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar li:first-of-type {
+            padding-left: 0;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .navbar li a:hover {
+            color: #3AC0C7;
+        }
+
+        .section, .gallery, .info, .footContainer {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .firstSectionText {
+            text-align: center;
+        }
+
+        .picsWithLabels {
+            height: 400px;
+            margin-top: 30px;
+        }
+
+        .pics {
+            position: relative;
+            width: 330px;
+            height: 330px;
+            float: left;
+        }
+
+        .pics .label {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            background-color: white;
+            color: #3AC0C7;
+            border: 2px solid #3AC0C7;
+            border-radius: 5px;
+            font-size: 20px;
+            padding-top: 3px;        
+        }
+
+        .pics img, .articles img {
+            width: 330px;
+            height: 330px;  
+        }
+
+        .picsSecond {
+            margin: 0 55px;
+        }
+
+        .bgi {
+            width: 100%;
+            height: 5px;
+            background-image: url(img/divider-pattern.png);
+        }
+
+        .articles {
+            margin-top: 30px;
+            height: 340px;
+        }
+
+        .santorini, .zakynthos, .articleText, .articleFood, .facts, .rout, .subs, .about {
+            float: left;
+        }
+
+        .santorini, .zakynthos {
+            margin-right: 20px;
+        }
+
+        .articles p {
+            width: 750px;
+            text-align: justify;
+        }
+
+        .secondArticle {
+            position: relative;
+            height: 350px;
+        }
+
+        .articleFood {
+            position: absolute;
+            top: 16px;
+            right: 0;
+            margin-left: 20px;
+        }
+
+        .textFirst {
+            margin-top: 0;
+        }
+
+        .gallery {
+            height: 280px;
+        }
+
+        .gallery div {
+            float: left;
+            margin: 15px 0 15px 50px;
+        }
+
+        .gallery div:first-of-type {
+            margin-left: 0;
+        }
+
+        .gallery img {
+            width: 180px;
+            height: 180px;
+        }
+
+        h2 {
+            font-family: 'Fjalla One', sans-serif;
+            text-shadow: 0 2px black;
+            font-size: 40px;
+            margin-bottom: 16px;
+            color: lightgray;
+        }
+
+        .info {
+            height: 170px;
+            margin-top: 50px;
+        }
+
+        .info p, .about p {
+            text-align: justify;
+        }
+
+        .facts, .rout, .subs, .about {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .facts {
+            padding-right: 15px;
+        }
+
+        .rout, .about {
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 25px;
+            text-align: center;
+            color: rgb(91,85,85);
+        }
+
+        .footContainer {
+            height: 170px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 185px;
+            background-color: rgb(91,85,85);
+        }
+
+        .footer h3, .footer p {
+            color: lightgray;
+        }
+
+        .copy {
+            text-align: center;
+            font-size: 12px;
+            clear: both;
+            margin: 0;
+            padding: 20px 0 10px;
+            background-color: rgb(91,85,85);
+        }
+
+        [type="submit"] {
+            background-color: #49afcd;
+            background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+            border-radius: 6px;
+            display: inline-block;
+            border: 1px solid #bbb;
+            color: white;
+            text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+            height: 25px;
+            width: 100px;
+            font-size: 16px;
+        }
+
+        [type="submit"]:hover {
+            cursor: pointer;
+        }
+
+        [type="email"] {
+            height: 25px;
+            width: 200px;
+            border-radius: 6px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        [type="email"]:focus {
+            outline: none;
+            border: 1px solid #49afcd;
+        }
+
+        [placeholder] {
+            padding-left: 5px;
+        }
+
+        form {
+            width: 100%;
+            box-sizing: border-box;
+            padding-right: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div><img src="img/images.jpg" alt="palms"></div>
+        <div class="textHeader">
+            <h1>Заметки путешественника</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, iusto sit cum expedita voluptate iste pariatur facilis maxime dolore velit perferendis.</p>
+        </div>    
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Путешествия</a></li>
+            <li><a href="#">Еда</a></li>
+            <li><a href="#">Отдых</a></li>
+        </ul>
+    </div>
+    <div class="section firstSection">
+        <p class="firstSectionText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum sed error laboriosam quaerat hic atque ex dignissimos dolores nam earum voluptas deserunt tempora animi sint, sapiente voluptates eligendi officiis.</p>
+        <div class="picsWithLabels">
+            <div class="pics">
+                <div class="greece"><img src="img/greece.jpg" alt="Greece"></div> 
+                <p class="label">Путешествия</p>
+            </div>
+            <div class="pics picsSecond">
+                <div class="food"><img src="img/food.jpg" alt="Food"></div>
+                <p class="label">Еда</p>
+            </div>
+            <div class="pics">
+                <div class="relax"><img src="img/relax.jpg" alt="Relax"></div>
+                <p class="label">Отдых</p>
+            </div>
+        </div>
+    </div>
+    <div class="bgi"></div>
+    <div class="section secondSection">
+        <div class="articles">
+            <div class="santorini"><img src="img/santorini-greece.jpg" alt="Santorini"></div>
+            <p class="articleText textFirst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat facilis ad consequuntur blanditiis labore esse illo natus inventore nesciunt. Ipsam ab ducimus harum quam ex modi quaerat natus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis repellendus architecto necessitatibus incidunt ratione magni aliquid, doloribus sint ipsa consectetur nam veritatis fugit totam labore nisi iste! In, quos?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat facilis ad consequuntur blanditiis labore esse illo natus inventore nesciunt. Ipsam ab ducimus harum quam ex modi quaerat natus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non inventore qui illum animi ducimus consequuntur modi quis voluptatibus labore, dolorum at soluta veniam ab mollitia repellat? Perferendis, rem obcaecati.</p>
+        </div>
+        <div class="articles secondArticle">
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat facilis ad consequuntur blanditiis labore esse illo natus inventore nesciunt. Ipsam ab ducimus harum quam ex modi quaerat natus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illo quas sint doloremque aut autem impedit quasi minima iste, assumenda distinctio voluptatum pariatur quidem aliquam quam, excepturi et, dicta eum?</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat facilis ad consequuntur blanditiis labore esse illo natus inventore nesciunt. Ipsam ab ducimus harum quam ex modi quaerat natus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere exercitationem odio molestias, pariatur asperiores velit libero, consequuntur incidunt ex nulla illo voluptate vitae rem ratione laboriosam provident, eum magni sint!</p>
+            <div class="articleFood"><img src="img/food.jpg" alt="Food"></div>
+        </div>
+        <div class="articles">
+            <div class="zakynthos"><img src="img/zakynthos-shipwreck-beach.jpg" alt="Zakynthos"></div>
+            <p class="articleText textFirst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat facilis ad consequuntur blanditiis labore esse illo natus inventore nesciunt. Ipsam ab ducimus harum quam ex modi quaerat natus soluta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo perferendis deserunt quia ex, tempora mollitia beatae eius aspernatur delectus alias itaque nihil quod perspiciatis est suscipit. Accusantium inventore architecto est!</p>
+            <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat facilis ad consequuntur blanditiis labore esse illo natus inventore nesciunt. Ipsam ab ducimus harum quam ex modi quaerat natus soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quod eius ducimus sequi molestias veniam. Rem officia qui nobis, a necessitatibus accusantium consectetur autem provident eius eveniet dolorem aperiam dignissimos!</p>
+        </div>
+    </div>
+    <div class="bgi"></div>
+    <div class="gallery">
+        <h2>Галерея</h2>
+        <div><img src="img/greece.jpg" alt="Греция"></div>
+        <div><img src="img/zakynthos-shipwreck-beach.jpg" alt="Закинтос"></div>
+        <div><img src="img/food2.jpg" alt="Вкусное"></div>
+        <div><img src="img/relax.jpg" alt="Релакс"></div>
+        <div><img src="img/santorini-greece.jpg" alt="Санторини"></div>
+    </div>
+    <div class="bgi"></div>
+    <div class="info">
+        <div class="facts">
+            <h3>Интересные факты</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis eligendi dolore earum iusto, maxime tempore hic laborum repellendus, doloremque id impedit et corrupti ipsam corporis ad nobis dolores similique?</p>
+        </div>
+        <div class="rout">
+            <h3>Как составить маршрут</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis eligendi dolore earum iusto, maxime tempore hic laborum repellendus, doloremque id impedit et corrupti ipsam corporis ad nobis dolores similique?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footContainer">
+            <div class="subs">
+                <h3>Подписаться</h3>
+                <form action="" method="GET" enctype="text/plain">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="about">
+                <h3>О нас</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis eligendi dolore earum iusto, maxime tempore hic laborum repellendus, doloremque id impedit et corrupti ipsam corporis ad nobis dolores similique?</p>
+            </div>
+        </div>
+        <p class="copy">Copyright 2018, Your Company name</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login to Web App</title>
+    <style>
+        body {
+            background-color: rgb(82, 173, 212);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 50px;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid rgb(145, 145, 145);
+            text-align: center;
+            box-shadow: 0 0 1px 10px rgb(82, 164, 199);
+            border-radius: 5px;
+        }
+
+        .foot {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        [type="text"]:first-of-type {
+            margin: 35px 0;
+        }
+
+        [type="text"], [type="password"] {
+            width: 80%;
+            height: 40px;
+            box-shadow: 0 0 1px 7px rgb(241, 244, 247);
+            border-radius: 5px;
+            border: 1px solid rgb(145, 145, 145);
+        }
+
+        [type="text"]:focus, [type="password"]:focus {
+            outline: none;
+            border-color:#2196F3;
+            box-shadow: 0 0 1px 7px rgba(82, 164, 199, 0.5);
+        }
+
+        [for="check"], [type="submit"] {
+            cursor: pointer;
+        }
+
+        [for="check"] {
+            margin-left: 25px;
+            font-size: 18px;
+        }
+
+        h1 {
+            border-bottom: 1px solid rgb(145, 145, 145);
+            padding: 15px 0;
+            margin: 0;
+            background-color: rgb(241, 244, 247);
+            border-radius: 5px 5px 0 0;
+            font-size: 25px;
+        }
+
+        .loginForm {
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+        }
+
+        p {
+            margin: 0;
+            padding: 16px 0;
+        }
+
+        .forgot {
+            font-weight: bold;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        [placeholder] {
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+        [type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin: auto 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .logRow {
+            width: 85%;
+            margin: 0 auto;
+            text-align: left;
+            padding: 35px 0;
+            position: relative;
+        }
+
+        [type="submit"] {
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid rgb(145, 145, 145);
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(220, 235, 242);
+            margin: auto 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            transition: 0.2s;
+        }
+
+        [type="submit"]:hover {
+            background-color: rgba(82, 164, 199, 0.5);
+        }
+
+        [type="submit"]:active {
+            top: 5px;
+            outline: none;
+            box-shadow: 0 0 5px 5px rgba(82, 164, 199, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login to Web App</h1>
+        <div class="loginForm">
+            <form action="" method="GET" enctype="text/plain">
+                <input type="text" name="username" id="username" required placeholder="Username or Email" autofocus> <br>
+                <input type="password" name="pass" id="pass" required placeholder="Password"> <br>
+                <div class="logRow">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Remember me on this computer</label>
+                    <input type="submit" name="login" id="login" value="Login">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <div class="foot"><span class="forgot">Forgot your password?</span> <a href="#">Click here to reset it.</a></div>
+</body>
+</html>

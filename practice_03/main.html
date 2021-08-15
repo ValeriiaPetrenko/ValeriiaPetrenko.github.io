@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let`s go!</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(159, 245, 159);
+            font-family: 'Merienda', cursive;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            display: block;
+            text-align: center;
+            font-size: 25px;
+            padding: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        li:hover {
+            background-color: rgb(89, 240, 43);
+            border-radius: 15px;
+        }
+
+        li a:hover {
+            color: white;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        .header {
+            text-align: center;
+            width: 100%;
+            background-color: rgb(89, 240, 43);
+            color: white;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .navbar {
+            float: left;
+            width: 15%;
+        }
+
+        .main {
+            float: left;
+            width: 70%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .aside {
+            float: left;
+            width: 15%;
+        }
+
+        .footer {
+            clear: both;
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .textOfArticle {
+            text-align: justify;
+            font-size: 20px;
+            text-align-last: justify;
+        }
+
+        .headOfArticle, .footer {
+            background-color: rgb(89, 240, 43);
+            border-radius: 15px;
+            color: white;
+            text-align: center; 
+            padding: 5px 0;
+        }
+
+        .discount {
+            text-align: center;
+            font-weight: bold;
+            color: rgb(89, 240, 43);
+            font-size: 25px;
+        }
+
+        .fifty {
+            font-size: 20px;
+            padding: 0 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Let`s go!</h1>
+        <h2>Пора в путешествие!</h2>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Туры</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="article">
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/3F83/production/_105795261_gettyimages-669737652.jpg" alt="Гранд Каньйон">
+            <h2 class="headOfArticle">Большой Каньйон</h2>
+            <p class="textOfArticle">Большой каньон — один из глубочайших каньонов в мире. Находится на плато Колорадо, штат Аризона, США, на территории национального парка «Гранд-Каньон», а также резерваций индейцев племен навахо, хавасупай и валапай. Каньон прорезан рекой Колорадо в толще известняков, сланцев и песчаников. Длина каньона — 446 км.</p>
+        </div>
+        <div class="article">
+            <img src="https://putidorogi-nn.ru/images/stories/severnaya_amerika/sha/niagarskiy_vodopad_2.jpg" alt="Ниагарский водопад">
+            <h2 class="headOfArticle">Ниагарский водопад</h2>
+            <p class="textOfArticle">Ниагарский водопад — комплекс водопадов на реке Ниагаре, отделяющий американский штат Нью-Йорк от канадской провинции Онтарио. Ниагарские водопады — это водопад «Подкова», иногда ещё называемый «Канадским водопадом», «Американский водопад» и водопад «Фата».</p>
+        </div>
+        <div class="article">
+            <img src="https://lyubosvit.com.ua/wp-content/uploads/2018/06/8496d8c61c9a40549761d281bd384709-url-e1449683447141-853x640.jpg" alt="Плитвицкие озера">
+            <h2 class="headOfArticle">Плитвицкие озера</h2>
+            <p class="textOfArticle">Национальный парк «Плитвицкие озёра» – лесной заповедник площадью 295 кв. км, расположенный в центральной части Хорватии. Особенность парка – каскад из 16 озер, соединенных водопадами, и известняковый каньон. Озера также связаны между собой пешеходными тропами. Здесь можно покататься на электрическом катере, курсирующем между 12 верхними и 4 нижними озерами. Последние заканчиваются водопадом высотой 78 м.</p>
+        </div>
+    </div>
+    <div class="aside">
+        <p class="discount">Акция</p> 
+        <p class="fifty">Скидки на туры до 50%</p>
+    </div>
+    <div class="footer">Наши контакты: +380934445678</div>
+</div>
+</body>
+</html>
