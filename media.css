@@ -1,0 +1,196 @@
+@media (max-width: 1347px) {
+    #header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #buttons input {
+        margin-top: 15px;
+        width: 350px;
+    }
+
+    #buttons {
+        justify-self: center;
+        grid-template-areas: 
+            'aboutBtn'
+            'galleryBtn'
+            'blogBtn';
+    }
+    
+    #person {
+        justify-self: center;
+        grid-template-rows: 1fr 500px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'annaIs'
+            'annaPic';
+    }
+
+    #annaIs {
+        border: none;
+        padding: 0 60px;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 40px 0 25px;
+    }
+
+    #annaPic {
+        justify-self: center;
+        margin-top: 20px;
+    }
+
+    #annaPic img {
+        width: 450px;
+    }
+
+    #gallery {
+        grid-template-columns: 10px 1fr 1fr 10px;
+        grid-template-rows: 60px 200px 200px 200px 200px;
+        grid-template-areas: 
+            '. galh2 galh2 .'
+            '. pic1 pic2 .'
+            '. pic3 pic4 .'
+            '. pic5 pic6 .'
+            '. pic7 pic8 .';
+    }
+
+    #gallery h2 {
+        padding-left: 0;
+    }
+
+    #gallery .pic, #gallery #pic5 {
+        line-height: 200px;
+    }
+
+    #blog {
+        grid-template-columns: 10px repeat(4, 1fr) 10px;
+        grid-template-rows: 60px 350px 400px 400px 250px 60px;
+        grid-template-areas: 
+            '. blogh2 blogh2 blogh2 blogh2 .'
+            '. mount mount bear bear .'
+            '. video video video video .'
+            '. map map map map .'
+            '. hug hug bride bride .'
+            '. . viewbtn viewbtn . .';
+    }
+
+    .sometext p {
+        display: none;
+    }
+
+    #mount .somecont, #bear .somecont, #mount .sometext, #bear .sometext {
+        height: 50%;
+    }
+
+    #blog .somecont {
+        background-size: 100%;
+    }
+
+    #blog .somecont:hover {
+        background-size: 110%;
+    }
+
+    #blog h3 {
+        grid-area: blogh3;
+        margin: 0;
+        align-self: center;
+    }
+
+    #blog .sometext {
+        display: grid;
+        padding: 0;
+        grid-template-areas: 
+            '. . .'
+            '. blogh3 .'
+            '. . .';
+    }
+
+    #blog #video .somecont, #blog #map .somecont, #blog #hug .somecont, #blog #bride .somecont {
+        height: 85%;
+    }
+
+    #blog #video .sometext, #blog #map .sometext, #blog #hug .sometext, #blog #bride .sometext {
+        height: 15%;
+    }
+
+    #blog h2 {
+        padding-left: 0;
+    }
+
+    #footer {
+        grid-template-columns: 30px auto 30px;
+        grid-template-rows: 20px 40px 500px 60px 20px;
+        grid-template-areas: 
+            '. . .'
+            '. footh3 .'
+            '. someform .'
+            '. socmedia .'
+            '. . .';
+    }
+
+    #footer #someform {
+        align-self: center;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: 15px repeat(5, auto) 15px;
+        grid-template-areas: 
+            '. . .'
+            '. name .'
+            '. pass .'
+            '. tel .'
+            '. mail .'
+            '. me .'
+            '. . .';
+    }
+
+    #footer #socmedia {
+        margin-top: 0;
+        grid-template-columns: 50px repeat(4, 1fr) 50px;
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    #gallery {
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 40px repeat(8, 200px);
+        grid-template-areas: 
+            '. galh2 .'
+            '. pic1 .'
+            '. pic2 .'
+            '. pic3 .'
+            '. pic4 .'
+            '. pic5 .'
+            '. pic6 .'
+            '. pic7 .'
+            '. pic8 .';
+    }
+
+    #gallery h2 {
+        padding-left: 0;
+    }
+
+    #blog {
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 40px repeat(6, 300px) 40px;
+        grid-template-areas: 
+            '. blogh2 .'
+            '. mount .'
+            '. bear .'
+            '. video .'
+            '. map .'
+            '. hug .'
+            '. bride .'
+            '. viewbtn .';
+    }
+    
+    #blog #mount .somecont, #blog #bear .somecont {
+        height: 85%;
+    }
+
+    #blog #mount .sometext, #blog #bear .sometext {
+        height: 15%;
+    }
+}
