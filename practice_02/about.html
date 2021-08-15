@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: url(img/pizza21.jpg) round;
+        }
+
+        .container::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8); 
+            z-index: 2;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            padding-left: 0;
+            padding-right: 90px;
+            float: left;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 5px;
+            box-sizing: border-box;
+            z-index: 3;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: rgb(100, 150, 160);
+        }
+
+        .about {
+            width: 1000px;
+            position: fixed;
+            top: 120px;
+            left: 250px;
+            z-index: 3;
+            text-align: center;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 25px;
+        }
+
+        .tel {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="about">
+            <p class="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus pariatur voluptatibus hic libero quisquam? Nulla sit eius provident a neque deserunt soluta aspernatur assumenda voluptas, perferendis ipsa reiciendis laboriosam?
+            Eaque possimus est earum voluptates? Perferendis, culpa eaque inventore officiis velit officia eos nihil blanditiis ab possimus optio repellendus dolorem unde quo esse. Sit placeat a nemo cumque minima consequatur.
+            Labore totam alias, laboriosam laudantium voluptas possimus nisi nihil doloribus, corporis deserunt optio? Possimus enim, eius sit soluta deleniti architecto commodi esse. Nesciunt sed, nemo mollitia magni porro obcaecati libero.
+            </p>
+            <p class="tel">tel: +380 44 1234567</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: url(img/pizza21.jpg) round;
+        }
+
+        .container::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8); 
+            z-index: 2;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            padding-left: 0;
+            padding-right: 90px;
+            float: left;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 5px;
+            box-sizing: border-box;
+            z-index: 3;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: rgb(100, 150, 160);
+        }
+
+        .form {
+            width: 700px;
+            position: fixed;
+            top: 120px;
+            left: 400px;
+            z-index: 3;
+            border: 2px solid rgb(100, 150, 160);
+            padding: 20px;
+        }
+
+        .formBlock {
+            width: 50%;
+            float: left;
+        }
+
+        h2 {
+            font-family: 'Homemade Apple', cursive;
+            margin-bottom: 10px;
+        }
+
+        select, label, [type='submit'] {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 20px;
+        }
+
+        select, [type='text'] {
+            width: 75%;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        select:focus, [type='text']:focus {
+            outline: none;
+            border: 1px solid #4D90FE;
+            border-radius: 5px;
+            box-shadow: 1px 1px grey inset;
+        }
+
+        [type='text'] {
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+
+        .first, .second {
+            height: 107px;
+        }
+
+        [type='submit'] {
+            width: 30%;
+            height: 30px;
+            background-color: rgb(100, 150, 160);
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid grey;
+            margin-top: 15px;
+        }
+
+        [type='submit']:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        [type='submit']:active, [type='submit']:focus {
+            outline: none;
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="form">
+            <form action="" method="GET" enctype="text/plain">
+                <div class="formBlock first">
+                    <h2>Choose pizza</h2>
+                    <select name="choose" id="choose">
+                        <option value="choose" selected disabled>Choose...</option>
+                        <option value="margarita">Margarita</option>
+                        <option value="fourSeasons">Four seasons</option>
+                        <option value="diablo">Diablo</option>
+                        <option value="carbonara">Carbonara</option>
+                    </select>
+                </div>
+                <div class="formBlock second">
+                    <h2>Choose the size</h2>
+                    <input type="radio" name="size" value="small">
+                    <label for="small">Small</label>
+                    <input type="radio" name="size" value="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="size" value="big">
+                    <label for="big">Big</label>
+                </div>
+                <div class="formBlock third">
+                    <h2>Add topping</h2>
+                    <input type="checkbox" name="topping" value="mozzarella" id="mozzarella">
+                    <label for="mozzarella">Mozzarella</label><br>
+                    <input type="checkbox" name="topping" value="mushrooms" id="mushrooms">
+                    <label for="mushrooms">Mushrooms</label><br>
+                    <input type="checkbox" name="topping" value="ham" id="ham">
+                    <label for="ham">Ham</label><br>
+                    <input type="checkbox" name="topping" value="pepperoni" id="pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br>
+                    <input type="checkbox" name="topping" value="sausage" id="sausage">
+                    <label for="sausage">Sausage</label><br>
+                    <input type="checkbox" name="topping" value="bacon" id="bacon">
+                    <label for="bacon">Bacon</label><br>
+                    <input type="checkbox" name="topping" value="olives" id="olives">
+                    <label for="olives">Black olives</label><br>
+                    <input type="checkbox" name="topping" value="peppers" id="peppers">
+                    <label for="peppers">Green peppers</label>
+                </div>
+                <div class="formBlock fourth">
+                    <h2>Quantity</h2>
+                    <select name="quantity" id="quantity">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                    <br>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="text" name="phone" id="phone"><br>
+                    <label for="address">Address</label><br>
+                    <input type="text" name="address" id="address"><br>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

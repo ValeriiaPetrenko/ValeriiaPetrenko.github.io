@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: url(img/pizza21.jpg) round;
+        }
+
+        .container::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8); 
+            z-index: 2;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            padding-left: 0;
+            padding-right: 90px;
+            float: left;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 5px;
+            box-sizing: border-box;
+            z-index: 3;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: rgb(100, 150, 160);
+        }
+
+        .wrapper {
+            width: 1100px;
+            position: fixed;
+            top: 100px;
+            left: 220px;
+            z-index: 3;
+        }
+
+        .pizza {
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .pizzaText {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 25px; 
+        }
+
+        .pizzaImg {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .pizzaImg img {
+            width: 280px;
+            height: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="wrapper">
+            <div class="pizza">
+                <div class="pizzaImg">
+                    <img src="img/11.png" alt="Margarita">
+                </div>
+                <div class="pizzaText">
+                    <p>Lorem ipsum dolor sit amet. lorem lore loren</p>
+                    <p>Price 9.00 USD</p>
+                </div>
+            </div>
+            <div class="pizza">
+                <div class="pizzaImg">
+                    <img src="img/22.png" alt="Diablo">
+                </div>
+                <div class="pizzaText">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Price 8.00 USD</p>
+                </div>
+            </div>
+            <div class="pizza">
+                <div class="pizzaImg">
+                    <img src="img/33.png" alt="Four seasons">
+                </div>
+                <div class="pizzaText">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Price 10.00 USD</p>
+                </div>
+            </div>
+            <div class="pizza">
+                <div class="pizzaImg">
+                    <img src="img/44.png" alt="Carbonara">
+                </div>
+                <div class="pizzaText">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Price 9.00 USD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
