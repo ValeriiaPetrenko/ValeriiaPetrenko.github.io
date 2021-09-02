@@ -1,4 +1,4 @@
-# ValeriiaPetrenko.github.io
+# WebPage [ValeriiaPetrenko.github.io](ValeriiaPetrenko.github.io)
 ## My practice projects:
 * [Photo Shooting Webpage](/practice_01/main.html) - using grid layout and media queries
 * [Pizza Webpage](/practice_02/home.html)
