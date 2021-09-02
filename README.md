@@ -1,4 +1,4 @@
-# Visit webpage <a href="ValeriiaPetrenko.github.io" target="blank">ValeriiaPetrenko.github.io</a>
+# Visit webpage <a href="https://ValeriiaPetrenko.github.io" target="blank">ValeriiaPetrenko.github.io</a>
 ## My practice projects:
 * [Photo Shooting Webpage](/practice_01/main.html) - using grid layout and media queries
 * [Pizza Webpage](/practice_02/home.html)
